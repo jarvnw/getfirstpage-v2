@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
-  const heroImage = "https://ik.imagekit.io/hijar/Untitled%20design%20(2)_-P-IOFcJV.jpg?updatedAt=1769578012485&ik-s=fefc9fcbbad3cd8296d5af6d632368817f2b460c";
+  const heroImage = "https://ik.imagekit.io/hijar/mockup_umkm%20fintrack_zBBnLErSB.jpg?updatedAt=1769606717696&ik-s=5aab179b827e522b285b7f5e170642d75e4982c4";
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();

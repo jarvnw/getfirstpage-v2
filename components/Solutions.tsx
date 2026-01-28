@@ -19,7 +19,7 @@ const SolutionLink: React.FC<{ text: string; href?: string; isHighlighted?: bool
 );
 
 const Solutions: React.FC = () => {
-  const solutionImage = "https://ik.imagekit.io/hijar/Untitled%20design%20(3)_2Fn3OgMad.jpg?updatedAt=1769578012609&ik-s=8d82dfd50422dabf2eb937b6f4f4dfb53d4db7f2";
+  const solutionImage = "https://ik.imagekit.io/hijar/mockup_toko%20online_VuXBoBPXg.png?updatedAt=1769606718856&ik-s=36fe8611cbb5d5b13c88d6b0d0d5ce6b8789480e";
 
   return (
     <section id="solusi" className="py-20 px-6 bg-white">
