@@ -13,7 +13,7 @@ const Header: React.FC = () => {
             alt="First Page Logo" 
             className="h-10 w-10 object-contain"
           />
-          <span className="font-bold text-slate-900 hidden sm:block">First Page</span>
+          <span className="font-bold text-slate-900 hidden sm:block">First Page Template</span>
         </div>
         
         {/* Navigation and button removed as requested */}

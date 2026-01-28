@@ -7,12 +7,12 @@ const SolutionLink: React.FC<{ text: string; href?: string; isHighlighted?: bool
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`group flex items-center justify-between w-full p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 ${isHighlighted ? 'border-brand/20' : 'hover:border-brand/30'}`}
+    className={`group flex items-center justify-between w-full p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500 ease-out ${isHighlighted ? 'border-brand/20' : 'hover:border-brand/40'}`}
   >
-    <span className={`font-semibold text-sm md:text-base transition-colors ${isHighlighted ? 'text-brand' : 'text-gray-600 group-hover:text-brand'}`}>
+    <span className={`font-semibold text-sm md:text-base transition-colors duration-300 ${isHighlighted ? 'text-brand' : 'text-gray-600 group-hover:text-brand'}`}>
       {text}
     </span>
-    <div className={`p-2 rounded-full transition-all ${isHighlighted ? 'bg-brand/10 text-brand' : 'text-gray-300 group-hover:bg-brand/10 group-hover:text-brand'}`}>
+    <div className={`p-2 rounded-full transition-all duration-500 group-hover:rotate-[360deg] ${isHighlighted ? 'bg-brand/10 text-brand' : 'text-gray-300 group-hover:bg-brand/10 group-hover:text-brand'}`}>
       <ArrowRight className="w-5 h-5" />
     </div>
   </a>
@@ -25,18 +25,18 @@ const Solutions: React.FC = () => {
     <section id="solusi" className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
         
-        <div className="flex-1 w-full flex justify-center lg:justify-start">
+        <div className="flex-1 w-full flex justify-center lg:justify-start reveal">
           <div className="relative group max-w-md lg:max-w-full">
             <img 
               src={solutionImage} 
               alt="Business Strategy" 
-              className="relative w-full aspect-square object-cover"
+              className="relative w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         </div>
 
         <div className="flex-1 space-y-8">
-          <div className="space-y-4">
+          <div className="space-y-4 reveal">
             <p className="text-gray-400 font-medium tracking-wide text-sm md:text-base">Dapatkan solusi cerdas</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
               Atasi masalah <br />
@@ -44,7 +44,7 @@ const Solutions: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid gap-4 max-w-lg">
+          <div className="grid gap-4 max-w-lg stagger-reveal">
             <SolutionLink 
               text="Website Toko Online UMKM" 
               href="https://webstoreumkm.vercel.app" 

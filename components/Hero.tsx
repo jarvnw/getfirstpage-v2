@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   return (
     <section className="pt-32 pb-16 px-6 overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        <div className="flex-1 space-y-8">
+        <div className="flex-1 space-y-8 reveal">
           <div className="space-y-6">
             <p className="text-gray-400 font-medium tracking-wide text-sm md:text-base">First Page Template</p>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-slate-900">
@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
           
           <a 
             href="#solusi" 
-            className="inline-flex items-center justify-center px-8 py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-brand/20 hover:bg-[#e65300] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
+            className="inline-flex items-center justify-center px-8 py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-brand/20 hover:bg-[#e65300] hover:shadow-xl hover:scale-105 transition-all duration-300 transform active:scale-95"
           >
             Lihat Solusi Kami
           </a>
         </div>
         
-        <div className="flex-1 w-full flex justify-center lg:justify-end">
-          <div className="relative group max-w-md lg:max-w-full">
+        <div className="flex-1 w-full flex justify-center lg:justify-end reveal" style={{transitionDelay: '0.3s'}}>
+          <div className="relative group max-w-md lg:max-w-full animate-float">
             <img 
               src={heroImage} 
               alt="Digital Solution Illustration" 

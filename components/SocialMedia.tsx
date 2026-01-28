@@ -19,9 +19,9 @@ const SocialButton: React.FC<{ icon: React.ReactNode; text: string; href?: strin
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-3 px-6 py-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:border-brand/20 transition-all duration-300 group"
+    className="flex items-center gap-3 px-6 py-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-brand/30 transition-all duration-300 group"
   >
-    <div className="text-gray-400 group-hover:text-brand transition-colors">
+    <div className="text-gray-400 group-hover:text-brand transition-all duration-300 group-hover:scale-110">
       {icon}
     </div>
     <span className="text-gray-600 font-medium text-sm md:text-base group-hover:text-slate-900 transition-colors">
@@ -36,14 +36,14 @@ const SocialMedia: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
         
         <div className="space-y-10 w-full flex flex-col items-center">
-          <div className="space-y-4">
+          <div className="space-y-4 reveal">
             <p className="text-gray-400 font-medium tracking-wide text-sm md:text-base">Dapatkan konten terbaru kami</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
               <span className="text-brand">Follow</span> sosial media kami
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl stagger-reveal">
             <SocialButton 
               icon={<Youtube className="w-5 h-5" />} 
               text="First Page Template" 
