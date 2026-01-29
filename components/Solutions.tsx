@@ -38,9 +38,11 @@ const Solutions: React.FC = () => {
         <div className="flex-1 space-y-8">
           <div className="space-y-4 reveal">
             <p className="text-gray-400 font-medium tracking-wide text-sm md:text-base">Dapatkan solusi cerdas</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
-              Atasi masalah <br />
-              <span className="text-brand">bisnismu</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl leading-tight text-slate-900">
+              <span className="font-playfair font-medium block">Atasi masalah</span>
+              <span className="font-playfair italic font-medium block">
+                <span className="text-brand">bisnismu</span>
+              </span>
             </h2>
           </div>
 

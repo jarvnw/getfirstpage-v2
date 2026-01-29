@@ -18,9 +18,11 @@ const Hero: React.FC = () => {
         <div className="flex-1 space-y-8 reveal">
           <div className="space-y-6">
             <p className="text-gray-400 font-medium tracking-wide text-sm md:text-base">First Page Template</p>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-slate-900">
-              Solusi digital cerdas, <br />
-              UMKM <span className="text-brand">naik kelas.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl leading-tight text-slate-900">
+              <span className="font-playfair font-medium block">Solusi digital cerdas,</span>
+              <span className="font-playfair italic font-medium block">
+                UMKM <span className="text-brand">naik kelas.</span>
+              </span>
             </h1>
             <div className="h-2 w-24 bg-brand rounded-full"></div>
           </div>

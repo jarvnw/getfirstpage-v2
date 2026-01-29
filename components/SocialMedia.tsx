@@ -38,8 +38,11 @@ const SocialMedia: React.FC = () => {
         <div className="space-y-10 w-full flex flex-col items-center">
           <div className="space-y-4 reveal">
             <p className="text-gray-400 font-medium tracking-wide text-sm md:text-base">Dapatkan konten terbaru kami</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
-              <span className="text-brand">Follow</span> sosial media kami
+            <h2 className="text-4xl md:text-5xl lg:text-6xl leading-tight text-slate-900">
+              <span className="font-playfair font-medium block">Follow sosial</span>
+              <span className="font-playfair italic font-medium block">
+                <span className="text-brand">media kami</span>
+              </span>
             </h2>
           </div>
 
